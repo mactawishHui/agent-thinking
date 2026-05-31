@@ -7,8 +7,8 @@
 ## Articles
 
 - [Harness Engineering，AI Agent 不是要放开跑，而是要在规则里赢](./harness-engineering-article.md)
+- [AI Agent 越能写，我们越需要奥卡姆剃刀](./harness-occam-razor-article.md)
 
 ## Assets
 
 文章相关图片和结构图放在 [assets](./assets/) 目录下。
-
