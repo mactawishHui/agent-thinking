@@ -9,6 +9,7 @@
 - [Harness Engineering，AI Agent 不是要放开跑，而是要在规则里赢](./harness-engineering-article.md)
 - [AI Agent 越能写，我们越需要奥卡姆剃刀](./harness-occam-razor-article.md)
 - [Claude 员工为什么能把想法直接做成产品](./claude-prototype-workflow-article.md)
+- [Agent 很强，但人不能偷懒](./agent-human-not-lazy-article.md)
 
 ## Assets
 
