@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">FDE 的位置，不是外包，而是翻译层</title>
+  <desc id="desc">结构图展示模型公司、FDE 和企业现场之间的双向关系，FDE 把模型能力部署进生产链路，也把现场反馈带回产品和模型路线。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.56" stop-color="#132f38"/>
+      <stop offset="1" stop-color="#f6f1e7"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020617" flood-opacity="0.22"/>
+    </filter>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font: 700 54px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #fff7ed; letter-spacing: 0; }
+    .subtitle { font: 400 25px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #cbd5e1; letter-spacing: 0; }
+    .panel-title { font: 700 34px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .label { font: 600 26px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .small { font: 400 21px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #334155; letter-spacing: 0; }
+    .dark-label { font: 700 28px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+    .dark-small { font: 400 21px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+    .tag { font: 600 21px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #115e59; letter-spacing: 0; }
+  </style>
+
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <circle cx="1425" cy="150" r="220" fill="#fff7ed" opacity="0.16"/>
+  <circle cx="210" cy="780" r="260" fill="#22d3ee" opacity="0.08"/>
+
+  <text x="96" y="105" class="title">FDE 的位置，不是外包，而是翻译层</text>
+  <text x="100" y="150" class="subtitle">把模型能力带进企业生产链路，也把现场经验带回模型公司</text>
+
+  <rect x="92" y="230" width="430" height="500" rx="28" fill="#f8fafc" opacity="0.96" filter="url(#shadow)"/>
+  <text x="140" y="302" class="panel-title">模型公司</text>
+  <text x="140" y="340" class="small">已有能力很强，但缺少真实链路</text>
+  <rect x="140" y="386" width="330" height="72" rx="16" fill="#e0f2fe"/>
+  <text x="170" y="431" class="label">模型能力</text>
+  <rect x="140" y="480" width="330" height="72" rx="16" fill="#ccfbf1"/>
+  <text x="170" y="525" class="label">工具链与 Agent 框架</text>
+  <rect x="140" y="574" width="330" height="72" rx="16" fill="#fef3c7"/>
+  <text x="170" y="619" class="label">产品路线与评测体系</text>
+
+  <rect x="1150" y="230" width="430" height="500" rx="28" fill="#f8fafc" opacity="0.96" filter="url(#shadow)"/>
+  <text x="1198" y="302" class="panel-title">企业现场</text>
+  <text x="1198" y="340" class="small">流程具体、边界复杂、经验隐性</text>
+  <rect x="1198" y="386" width="330" height="60" rx="14" fill="#ecfeff"/>
+  <text x="1228" y="425" class="label">业务流程</text>
+  <rect x="1198" y="462" width="330" height="60" rx="14" fill="#f0fdf4"/>
+  <text x="1228" y="501" class="label">权限、数据、系统</text>
+  <rect x="1198" y="538" width="330" height="60" rx="14" fill="#fff7ed"/>
+  <text x="1228" y="577" class="label">人机协作与责任</text>
+  <rect x="1198" y="614" width="330" height="60" rx="14" fill="#fef2f2"/>
+  <text x="1228" y="653" class="label">成功标准与失败案例</text>
+
+  <rect x="646" y="270" width="380" height="420" rx="34" fill="#0f172a" opacity="0.9" filter="url(#shadow)"/>
+  <circle cx="836" cy="387" r="80" fill="url(#teal)" opacity="0.92"/>
+  <path d="M795 415 C805 363, 866 363, 878 415" fill="none" stroke="#f8fafc" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="810" cy="372" r="11" fill="#f8fafc"/>
+  <circle cx="862" cy="372" r="11" fill="#f8fafc"/>
+  <text x="836" y="515" text-anchor="middle" class="dark-label">FDE</text>
+  <text x="836" y="555" text-anchor="middle" class="dark-small">现场部署工程师</text>
+  <rect x="710" y="592" width="252" height="44" rx="22" fill="#fef3c7"/>
+  <text x="836" y="622" text-anchor="middle" class="tag">翻译、部署、验证</text>
+
+  <path d="M522 460 C575 430, 610 430, 646 460" fill="none" stroke="#2dd4bf" stroke-width="7" marker-end="url(#arrow-teal)"/>
+  <text x="584" y="408" text-anchor="middle" class="dark-small">能力进入现场</text>
+  <path d="M1026 460 C1079 430, 1114 430, 1150 460" fill="none" stroke="#2dd4bf" stroke-width="7" marker-end="url(#arrow-teal)"/>
+  <text x="1088" y="408" text-anchor="middle" class="dark-small">落到生产链路</text>
+
+  <path d="M1198 754 C1010 840, 660 840, 470 754" fill="none" stroke="#f59e0b" stroke-width="7" marker-end="url(#arrow-amber)"/>
+  <rect x="604" y="790" width="464" height="58" rx="29" fill="#fff7ed" opacity="0.96"/>
+  <text x="836" y="827" text-anchor="middle" class="label">现场反馈、eval、可复用模式回流</text>
+</svg>

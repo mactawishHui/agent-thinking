@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">FDE 经验反馈循环</title>
+  <desc id="desc">流程图展示企业现场经验经由 FDE 翻译成 eval、agent skill 和部署模式，再反馈给模型公司产品路线，并泛化到更多客户。</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="0.55" stop-color="#12333b"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+    <filter id="shadow3" x="-16%" y="-16%" width="132%" height="132%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.22"/>
+    </filter>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf"/>
+    </marker>
+    <marker id="arrow4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font: 700 54px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #fff7ed; letter-spacing: 0; }
+    .subtitle { font: 400 25px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #cbd5e1; letter-spacing: 0; }
+    .label { font: 700 31px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .small { font: 400 21px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #334155; letter-spacing: 0; }
+    .caption { font: 600 24px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+    .dark { font: 700 27px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+  </style>
+
+  <rect width="1672" height="941" fill="url(#bg3)"/>
+  <text x="94" y="105" class="title">FDE 经验反馈循环</text>
+  <text x="98" y="150" class="subtitle">不是复制客户原始数据，而是把现场经验沉淀成可复用系统能力</text>
+
+  <path d="M430 300 C600 170, 1050 170, 1238 300" fill="none" stroke="#2dd4bf" stroke-width="8" marker-end="url(#arrow3)"/>
+  <path d="M1280 650 C1080 820, 610 820, 410 650" fill="none" stroke="#f59e0b" stroke-width="8" marker-end="url(#arrow4)"/>
+
+  <g transform="translate(96 270)">
+    <rect width="360" height="330" rx="30" fill="url(#card)" filter="url(#shadow3)"/>
+    <text x="42" y="66" class="label">企业现场</text>
+    <text x="42" y="112" class="small">真实工作流</text>
+    <text x="42" y="150" class="small">隐性判断</text>
+    <text x="42" y="188" class="small">失败样本</text>
+    <text x="42" y="226" class="small">权限与责任边界</text>
+    <rect x="42" y="262" width="276" height="44" rx="22" fill="#fef3c7"/>
+    <text x="180" y="292" text-anchor="middle" class="small">现场不是标准题</text>
+  </g>
+
+  <g transform="translate(656 246)">
+    <rect width="360" height="378" rx="34" fill="#0f172a" opacity="0.94" filter="url(#shadow3)"/>
+    <circle cx="180" cy="92" r="54" fill="#14b8a6"/>
+    <text x="180" y="102" text-anchor="middle" class="dark">FDE</text>
+    <text x="54" y="178" class="caption">翻译成结构化产物</text>
+    <rect x="54" y="212" width="252" height="42" rx="21" fill="#ecfeff"/>
+    <text x="180" y="240" text-anchor="middle" class="small">流程图与系统设计</text>
+    <rect x="54" y="268" width="252" height="42" rx="21" fill="#dcfce7"/>
+    <text x="180" y="296" text-anchor="middle" class="small">eval 与成功标准</text>
+    <rect x="54" y="324" width="252" height="42" rx="21" fill="#fef3c7"/>
+    <text x="180" y="352" text-anchor="middle" class="small">agent skill 与部署模式</text>
+  </g>
+
+  <g transform="translate(1216 270)">
+    <rect width="360" height="330" rx="30" fill="url(#card)" filter="url(#shadow3)"/>
+    <text x="42" y="66" class="label">模型公司</text>
+    <text x="42" y="112" class="small">产品路线</text>
+    <text x="42" y="150" class="small">工具链改进</text>
+    <text x="42" y="188" class="small">模型能力边界</text>
+    <text x="42" y="226" class="small">可复用行业模板</text>
+    <rect x="42" y="262" width="276" height="44" rx="22" fill="#ccfbf1"/>
+    <text x="180" y="292" text-anchor="middle" class="small">generalize 成产品能力</text>
+  </g>
+
+  <rect x="548" y="690" width="576" height="64" rx="32" fill="#fff7ed" opacity="0.96"/>
+  <text x="836" y="731" text-anchor="middle" class="label">build → prove → generalize</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">从横向公开知识，到纵向行业链路</title>
+  <desc id="desc">结构图展示大模型从公开网页、代码、论文等横向知识，经过 FDE 进入多个垂直行业生产链路的纵向下钻过程。</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.55" stop-color="#eef6f6"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="stream" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font: 700 54px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .subtitle { font: 400 25px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #475569; letter-spacing: 0; }
+    .section { font: 700 34px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .label { font: 600 25px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+    .small { font: 400 20px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #475569; letter-spacing: 0; }
+    .dark { font: 700 26px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+    .dark-small { font: 400 19px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+  </style>
+
+  <rect width="1672" height="941" fill="url(#bg2)"/>
+  <text x="86" y="104" class="title">从横向公开知识，到纵向行业链路</text>
+  <text x="90" y="150" class="subtitle">公开互联网解决“看得广”，企业现场解决“理解得深”</text>
+
+  <rect x="86" y="226" width="510" height="560" rx="30" fill="#ffffff" opacity="0.96" filter="url(#soft)"/>
+  <text x="136" y="300" class="section">横向知识层</text>
+  <text x="136" y="340" class="small">公开、通用、容易规模化获取</text>
+  <g>
+    <rect x="136" y="390" width="175" height="74" rx="18" fill="#e0f2fe"/>
+    <text x="224" y="435" text-anchor="middle" class="label">网页</text>
+    <rect x="330" y="390" width="175" height="74" rx="18" fill="#dcfce7"/>
+    <text x="418" y="435" text-anchor="middle" class="label">代码</text>
+    <rect x="136" y="488" width="175" height="74" rx="18" fill="#fef3c7"/>
+    <text x="224" y="533" text-anchor="middle" class="label">论文</text>
+    <rect x="330" y="488" width="175" height="74" rx="18" fill="#fee2e2"/>
+    <text x="418" y="533" text-anchor="middle" class="label">论坛</text>
+    <rect x="136" y="586" width="369" height="74" rx="18" fill="#ede9fe"/>
+    <text x="321" y="631" text-anchor="middle" class="label">公开文档与教程</text>
+  </g>
+  <text x="136" y="720" class="small">问题，不足以还原企业内部真实生产链路</text>
+
+  <path d="M624 500 C710 455, 774 455, 860 500" fill="none" stroke="url(#stream)" stroke-width="14" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="650" y="430" width="202" height="72" rx="36" fill="#0f766e"/>
+  <text x="751" y="474" text-anchor="middle" class="dark">FDE 进入现场</text>
+
+  <rect x="900" y="218" width="686" height="590" rx="34" fill="#0f172a" opacity="0.94" filter="url(#soft)"/>
+  <text x="952" y="294" class="dark">纵向行业链路</text>
+  <text x="952" y="334" class="dark-small">具体、隐性、和组织流程强绑定</text>
+
+  <g transform="translate(952 385)">
+    <rect x="0" y="0" width="140" height="340" rx="24" fill="#164e63"/>
+    <text x="70" y="48" text-anchor="middle" class="dark">银行</text>
+    <text x="70" y="108" text-anchor="middle" class="dark-small">风控</text>
+    <text x="70" y="160" text-anchor="middle" class="dark-small">合规</text>
+    <text x="70" y="212" text-anchor="middle" class="dark-small">客服</text>
+    <text x="70" y="264" text-anchor="middle" class="dark-small">留痕</text>
+  </g>
+  <g transform="translate(1110 385)">
+    <rect x="0" y="0" width="140" height="340" rx="24" fill="#14532d"/>
+    <text x="70" y="48" text-anchor="middle" class="dark">医疗</text>
+    <text x="70" y="108" text-anchor="middle" class="dark-small">分诊</text>
+    <text x="70" y="160" text-anchor="middle" class="dark-small">病历</text>
+    <text x="70" y="212" text-anchor="middle" class="dark-small">责任</text>
+    <text x="70" y="264" text-anchor="middle" class="dark-small">接管</text>
+  </g>
+  <g transform="translate(1268 385)">
+    <rect x="0" y="0" width="140" height="340" rx="24" fill="#78350f"/>
+    <text x="70" y="48" text-anchor="middle" class="dark">制造</text>
+    <text x="70" y="108" text-anchor="middle" class="dark-small">产线</text>
+    <text x="70" y="160" text-anchor="middle" class="dark-small">供应</text>
+    <text x="70" y="212" text-anchor="middle" class="dark-small">异常</text>
+    <text x="70" y="264" text-anchor="middle" class="dark-small">质量</text>
+  </g>
+  <g transform="translate(1426 385)">
+    <rect x="0" y="0" width="110" height="340" rx="24" fill="#1e3a8a"/>
+    <text x="55" y="48" text-anchor="middle" class="dark">法律</text>
+    <text x="55" y="108" text-anchor="middle" class="dark-small">检索</text>
+    <text x="55" y="160" text-anchor="middle" class="dark-small">审查</text>
+    <text x="55" y="212" text-anchor="middle" class="dark-small">风险</text>
+    <text x="55" y="264" text-anchor="middle" class="dark-small">责任</text>
+  </g>
+
+  <rect x="952" y="750" width="584" height="52" rx="26" fill="#fef3c7"/>
+  <text x="1244" y="784" text-anchor="middle" class="label">模型从“知道很多”，走向“懂得怎么做”</text>
+</svg>
