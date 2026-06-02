@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">为什么现在可以直接说</title>
+  <desc id="desc">结构图展示语音输入现在可用的三个条件，模型理解能力增强、输入法实时转写和轻度整理、面对 Agent 没有社交评价压力。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 32px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 23px; font-weight: 400; fill: #475569; }
+    .center { font-size: 36px; font-weight: 700; fill: #f8fafc; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <text x="96" y="110" class="title">为什么现在可以直接说</text>
+  <text x="100" y="155" class="subtitle">语音输入能进入 Agent 工作流，依赖输入法体验，也依赖模型理解能力成熟</text>
+
+  <rect x="596" y="332" width="480" height="190" rx="34" fill="#7c3aed" filter="url(#shadow)"/>
+  <text x="836" y="405" text-anchor="middle" class="center">口语表达</text>
+  <text x="836" y="456" text-anchor="middle" class="center">可以直接进入 Agent</text>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="265" width="398" height="170" rx="28" fill="#ffffff"/>
+    <rect x="112" y="540" width="398" height="170" rx="28" fill="#ffffff"/>
+    <rect x="1162" y="265" width="398" height="170" rx="28" fill="#ffffff"/>
+    <rect x="1162" y="540" width="398" height="170" rx="28" fill="#ffffff"/>
+  </g>
+
+  <text x="162" y="330" class="h">模型理解能力足够强</text>
+  <text x="162" y="378" class="p">能处理停顿、补充、</text>
+  <text x="162" y="412" class="p">临时修正和松散表达</text>
+
+  <text x="162" y="605" class="h">输入法承担转写整理</text>
+  <text x="162" y="653" class="p">实时转文字，清掉部分</text>
+  <text x="162" y="687" class="p">口头停顿和重复</text>
+
+  <text x="1212" y="330" class="h">Agent 接收长上下文</text>
+  <text x="1212" y="378" class="p">大段背景、边界和反馈</text>
+  <text x="1212" y="412" class="p">会变成可用材料</text>
+
+  <text x="1212" y="605" class="h">没有社交评价压力</text>
+  <text x="1212" y="653" class="p">说得乱也没关系</text>
+  <text x="1212" y="687" class="p">后面可以整理和追问</text>
+
+  <path d="M510 350 C585 350, 585 385, 596 400" stroke="#7c3aed" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M510 625 C585 625, 585 490, 596 450" stroke="#7c3aed" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1162 350 C1087 350, 1087 385, 1076 400" stroke="#7c3aed" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1162 625 C1087 625, 1087 490, 1076 450" stroke="#7c3aed" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="458" y="782" width="756" height="64" rx="32" fill="#ede9fe"/>
+  <text x="836" y="824" text-anchor="middle" class="h">人可以先表达，结构化工作交给 Agent 继续完成</text>
+</svg>

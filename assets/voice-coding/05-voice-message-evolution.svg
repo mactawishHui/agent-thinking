@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">语音消息观念变化</title>
+  <desc id="desc">时间线展示语音从早期给接收者增加理解成本，到语音转文字降低接收成本，再到 Agent 成为接收方以后，语音成为高带宽输入方式。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 32px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 23px; font-weight: 400; fill: #475569; }
+    .tag { font-size: 24px; font-weight: 700; fill: #b45309; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <text x="96" y="110" class="title">语音从负担，变成输入带宽</text>
+  <text x="100" y="155" class="subtitle">关键变化是接收方成本被工具和 Agent 吸收了</text>
+
+  <line x1="236" y1="462" x2="1436" y2="462" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="260" width="360" height="300" rx="30" fill="#ffffff"/>
+    <rect x="656" y="260" width="360" height="300" rx="30" fill="#ffffff"/>
+    <rect x="1192" y="260" width="360" height="300" rx="30" fill="#ffffff"/>
+  </g>
+
+  <circle cx="300" cy="462" r="58" fill="#fef3c7" stroke="#f59e0b" stroke-width="5"/>
+  <circle cx="836" cy="462" r="58" fill="#fef3c7" stroke="#f59e0b" stroke-width="5"/>
+  <circle cx="1372" cy="462" r="58" fill="#dcfce7" stroke="#16a34a" stroke-width="5"/>
+
+  <text x="170" y="330" class="tag">七八年前</text>
+  <text x="170" y="378" class="h">发语音很重</text>
+  <text x="170" y="602" class="p">别人要听完 60 秒</text>
+  <text x="170" y="636" class="p">理解成本被转嫁</text>
+
+  <text x="706" y="330" class="tag">语音转文字出现</text>
+  <text x="706" y="378" class="h">语音可以被阅读</text>
+  <text x="706" y="602" class="p">接收成本下降</text>
+  <text x="706" y="636" class="p">场景限制减少</text>
+
+  <text x="1242" y="330" class="tag">Agent 成为接收方</text>
+  <text x="1242" y="378" class="h">长上下文变成材料</text>
+  <text x="1242" y="602" class="p">人负责表达</text>
+  <text x="1242" y="636" class="p">Agent 负责理解执行</text>
+
+  <rect x="538" y="750" width="596" height="64" rx="32" fill="#fff7ed" filter="url(#shadow)"/>
+  <text x="836" y="792" text-anchor="middle" class="h">语音的接收成本下降后，表达效率开始变得重要</text>
+</svg>

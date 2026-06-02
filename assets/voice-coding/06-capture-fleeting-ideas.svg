@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">语音捕捉灵感</title>
+  <desc id="desc">结构图展示灵感从出现到消失的过程，打字路径容易让想法变淡，语音路径可以先把想法快速记录，再交给 Agent 整理。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f3ff"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 32px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 23px; font-weight: 400; fill: #475569; }
+    .light { font-size: 28px; font-weight: 700; fill: #f8fafc; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <text x="96" y="110" class="title">先把快要消失的想法抓住</text>
+  <text x="100" y="155" class="subtitle">语音输入降低了从脑子到文本的阻力，后续整理可以交给 Agent</text>
+
+  <circle cx="248" cy="430" r="96" fill="#fef3c7" stroke="#f59e0b" stroke-width="6" filter="url(#shadow)"/>
+  <text x="248" y="420" text-anchor="middle" class="h">灵光一闪</text>
+  <text x="248" y="464" text-anchor="middle" class="p">新判断 / 类比 / 需求</text>
+
+  <rect x="520" y="250" width="360" height="150" rx="28" fill="#e2e8f0" filter="url(#shadow)"/>
+  <text x="700" y="312" text-anchor="middle" class="h">打开文档打字</text>
+  <text x="700" y="354" text-anchor="middle" class="p">整理、敲字、删改</text>
+
+  <rect x="520" y="530" width="360" height="150" rx="28" fill="#ede9fe" filter="url(#shadow)"/>
+  <text x="700" y="592" text-anchor="middle" class="h">直接说出来</text>
+  <text x="700" y="634" text-anchor="middle" class="p">先记录，再整理</text>
+
+  <rect x="1110" y="260" width="360" height="130" rx="28" fill="#cbd5e1" opacity="0.8" filter="url(#shadow)"/>
+  <text x="1290" y="320" text-anchor="middle" class="h" fill="#475569">想法变淡</text>
+  <text x="1290" y="354" text-anchor="middle" class="p">细节被压缩</text>
+
+  <rect x="1110" y="520" width="360" height="180" rx="28" fill="#7c3aed" filter="url(#shadow)"/>
+  <text x="1290" y="590" text-anchor="middle" class="light">Agent 整理</text>
+  <text x="1290" y="636" text-anchor="middle" class="light">归纳、拆解、实现</text>
+
+  <path d="M344 392 L520 325" stroke="#94a3b8" stroke-width="6" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M880 325 L1110 325" stroke="#94a3b8" stroke-width="6" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M344 468 L520 605" stroke="#7c3aed" stroke-width="10" fill="none" marker-end="url(#arrow-purple)"/>
+  <path d="M880 605 L1110 610" stroke="#7c3aed" stroke-width="10" fill="none" marker-end="url(#arrow-purple)"/>
+
+  <rect x="488" y="785" width="696" height="64" rx="32" fill="#ede9fe" filter="url(#shadow)"/>
+  <text x="836" y="827" text-anchor="middle" class="h">语音先保留原始想法，Agent 再负责结构化</text>
+</svg>

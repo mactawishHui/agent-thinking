@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">Agent 时代的输入瓶颈</title>
+  <desc id="desc">结构图展示当 Agent 执行能力提升后，人的思考和输入成为主要瓶颈，其中打字通道较窄，语音通道更宽。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 34px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 23px; font-weight: 400; fill: #475569; }
+    .tag { font-size: 26px; font-weight: 700; fill: #0f766e; }
+    .light { font-size: 26px; font-weight: 700; fill: #f8fafc; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <circle cx="1450" cy="170" r="240" fill="#14b8a6" opacity="0.08"/>
+  <circle cx="250" cy="780" r="280" fill="#f59e0b" opacity="0.08"/>
+
+  <text x="96" y="110" class="title">Agent 执行变快后，输入开始变窄</text>
+  <text x="100" y="155" class="subtitle">思考仍然需要时间，但把想法交给 Agent 的通道可以被拓宽</text>
+
+  <rect x="116" y="310" width="350" height="240" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="166" y="385" class="h">人的想法</text>
+  <text x="166" y="434" class="p">目标、背景、边界</text>
+  <text x="166" y="468" class="p">反馈、灵感、判断</text>
+
+  <rect x="650" y="250" width="372" height="132" rx="28" fill="#fff7ed" filter="url(#shadow)"/>
+  <text x="700" y="308" class="h">打字通道</text>
+  <text x="700" y="348" class="p">慢、容易压缩需求</text>
+
+  <rect x="650" y="482" width="372" height="162" rx="28" fill="#dcfce7" filter="url(#shadow)"/>
+  <text x="700" y="545" class="h">语音通道</text>
+  <text x="700" y="586" class="p">快、保留更多上下文</text>
+  <text x="700" y="620" class="p">更接近真实思考</text>
+
+  <rect x="1208" y="325" width="350" height="210" rx="30" fill="#0f766e" filter="url(#shadow)"/>
+  <text x="1383" y="398" text-anchor="middle" class="light">Agent</text>
+  <text x="1383" y="447" text-anchor="middle" class="light">理解、拆解、执行</text>
+
+  <path d="M466 430 L650 316" stroke="#94a3b8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M466 430 L650 563" stroke="#0f766e" stroke-width="10" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1022 316 L1208 430" stroke="#94a3b8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1022 563 L1208 430" stroke="#0f766e" stroke-width="10" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="540" y="735" width="592" height="64" rx="32" fill="#ecfdf5" filter="url(#shadow)"/>
+  <text x="836" y="777" text-anchor="middle" class="tag">Voice Coding 的价值，是提高人给 Agent 传递上下文的带宽</text>
+</svg>

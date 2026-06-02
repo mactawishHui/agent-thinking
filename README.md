@@ -14,6 +14,7 @@
 - [Claude 员工为什么能把想法直接做成产品](./claude-prototype-workflow-article.md)
 - [Agent 很强，但人不能偷懒](./agent-human-not-lazy-article.md)
 - [AI 提高下限，但人决定上限](./ai-raises-floor-human-ceiling-article.md)
+- [Voice Coding 是先进生产力工具](./voice-coding-article.md)
 
 ## Assets
 
