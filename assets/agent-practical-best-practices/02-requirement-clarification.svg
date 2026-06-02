@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">需求澄清流程</title>
+  <desc id="desc">结构图展示从一句模糊需求开始，Agent 一次只问一个问题，逐步澄清目标、边界和验收标准，直到形成清晰需求。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 34px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 23px; font-weight: 400; fill: #475569; }
+    .tag { font-size: 24px; font-weight: 700; fill: #0f766e; }
+    .q { font-family: Arial, sans-serif; font-size: 44px; font-weight: 700; fill: #f59e0b; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <text x="96" y="110" class="title">一段话通常说不清需求</text>
+  <text x="100" y="155" class="subtitle">先让 Agent 问问题，把模糊输入逐步压成目标、边界和验收标准</text>
+
+  <g filter="url(#shadow)">
+    <rect x="96" y="288" width="360" height="282" rx="30" fill="#ffffff"/>
+    <rect x="656" y="252" width="360" height="354" rx="30" fill="#ffffff"/>
+    <rect x="1216" y="288" width="360" height="282" rx="30" fill="#ffffff"/>
+  </g>
+
+  <text x="146" y="350" class="h">模糊输入</text>
+  <text x="146" y="398" class="p">“帮我做一个页面”</text>
+  <text x="146" y="442" class="p">目标、用户、边界、</text>
+  <text x="146" y="476" class="p">验收方式都还没展开</text>
+  <circle cx="374" cy="492" r="48" fill="#fff7ed"/>
+  <text x="374" y="507" text-anchor="middle" class="q">?</text>
+
+  <text x="706" y="318" class="h">一次只问一个问题</text>
+  <rect x="706" y="356" width="260" height="52" rx="18" fill="#fef3c7"/>
+  <text x="836" y="391" text-anchor="middle" class="tag">目标是什么</text>
+  <rect x="706" y="426" width="260" height="52" rx="18" fill="#ecfdf5"/>
+  <text x="836" y="461" text-anchor="middle" class="tag">边界在哪里</text>
+  <rect x="706" y="496" width="260" height="52" rx="18" fill="#e0f2fe"/>
+  <text x="836" y="531" text-anchor="middle" class="tag">怎样算完成</text>
+
+  <text x="1266" y="350" class="h">清晰需求</text>
+  <text x="1266" y="398" class="p">目标明确</text>
+  <text x="1266" y="434" class="p">不能做的事情明确</text>
+  <text x="1266" y="470" class="p">验收标准明确</text>
+  <rect x="1266" y="504" width="230" height="44" rx="22" fill="#dcfce7"/>
+  <text x="1381" y="534" text-anchor="middle" class="tag">95% 信心理解</text>
+
+  <path d="M456 429 L656 429" stroke="#0f766e" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1016 429 L1216 429" stroke="#0f766e" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M836 606 C836 690, 610 700, 610 610" stroke="#0f766e" stroke-width="5" fill="none" stroke-dasharray="14 12" marker-end="url(#arrow)"/>
+  <text x="836" y="742" text-anchor="middle" class="h">不急着执行，先把需求设计清楚</text>
+</svg>

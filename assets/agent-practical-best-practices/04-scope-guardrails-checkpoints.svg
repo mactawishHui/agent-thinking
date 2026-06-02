@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">边界和分阶段验收</title>
+  <desc id="desc">路线图展示 Agent 执行复杂需求时必须在边界内前进，每个阶段通过验证修复循环，并由用户验收后才能进入下一阶段。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 56px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 25px; font-weight: 400; fill: #475569; }
+    .h { font-size: 30px; font-weight: 700; fill: #0f172a; }
+    .p { font-size: 22px; font-weight: 400; fill: #475569; }
+    .gate { font-size: 24px; font-weight: 700; fill: #1d4ed8; }
+    .danger { font-size: 24px; font-weight: 700; fill: #b91c1c; }
+  </style>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <text x="96" y="110" class="title">边界先写清，阶段必须验收</text>
+  <text x="100" y="155" class="subtitle">让 Agent 在规定范围内推进，不能靠扩大需求或假流程伪装完成</text>
+
+  <rect x="136" y="290" width="1400" height="272" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+  <line x1="228" y1="426" x2="1444" y2="426" stroke="#2563eb" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="296" cy="426" r="50" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <circle cx="566" cy="426" r="50" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <circle cx="836" cy="426" r="50" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <circle cx="1106" cy="426" r="50" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <circle cx="1376" cy="426" r="50" fill="#dcfce7" stroke="#16a34a" stroke-width="5"/>
+  </g>
+  <text x="296" y="434" text-anchor="middle" class="gate">需求</text>
+  <text x="566" y="434" text-anchor="middle" class="gate">模块一</text>
+  <text x="836" y="434" text-anchor="middle" class="gate">模块二</text>
+  <text x="1106" y="434" text-anchor="middle" class="gate">模块三</text>
+  <text x="1376" y="434" text-anchor="middle" class="gate">完成</text>
+
+  <rect x="416" y="506" width="302" height="56" rx="28" fill="#ecfdf5"/>
+  <text x="567" y="543" text-anchor="middle" class="gate">验证 - 修复 - 用户确认</text>
+  <rect x="686" y="300" width="302" height="56" rx="28" fill="#ecfdf5"/>
+  <text x="837" y="337" text-anchor="middle" class="gate">验证 - 修复 - 用户确认</text>
+  <rect x="956" y="506" width="302" height="56" rx="28" fill="#ecfdf5"/>
+  <text x="1107" y="543" text-anchor="middle" class="gate">验证 - 修复 - 用户确认</text>
+
+  <rect x="196" y="640" width="360" height="140" rx="28" fill="#fff7ed" filter="url(#shadow)"/>
+  <text x="246" y="698" class="h">不能做的事</text>
+  <text x="246" y="740" class="p">不扩大范围，不引入无关抽象</text>
+
+  <rect x="656" y="640" width="360" height="140" rx="28" fill="#fee2e2" filter="url(#shadow)"/>
+  <text x="706" y="698" class="danger">禁止假完成</text>
+  <text x="706" y="740" class="p">不造假数据，不 mock 真实链路</text>
+
+  <rect x="1116" y="640" width="360" height="140" rx="28" fill="#f0fdf4" filter="url(#shadow)"/>
+  <text x="1166" y="698" class="h">人负责方向</text>
+  <text x="1166" y="740" class="p">每个主要交付批次都要确认</text>
+
+  <path d="M278 290 L278 226 L1394 226 L1394 290" fill="none" stroke="#94a3b8" stroke-width="5" stroke-dasharray="14 12"/>
+  <text x="836" y="244" text-anchor="middle" class="p">Guardrails，让路径可控，避免 Agent 自由扩张</text>
+</svg>

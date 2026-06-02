@@ -10,6 +10,7 @@
 - [AI Agent 越能写，我们越需要奥卡姆剃刀](./harness-occam-razor-article.md)
 - [可能隐藏在FDE工程师背后的战略意图](./fde-engineers-ai-company-real-strategy-article.md)
 - [Agent 是手段，而非目的](./agent-means-not-purpose-article.md)
+- [我现在使用 Agent 的六条实践原则](./agent-practical-best-practices-article.md)
 - [Claude 员工为什么能把想法直接做成产品](./claude-prototype-workflow-article.md)
 - [Agent 很强，但人不能偷懒](./agent-human-not-lazy-article.md)
 - [AI 提高下限，但人决定上限](./ai-raises-floor-human-ceiling-article.md)
