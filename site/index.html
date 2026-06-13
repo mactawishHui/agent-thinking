@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Thinking</title>
+    <meta name="description" content="关于 AI、Agent、工程化工作流和个人创造力的公开思考档案。">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Agent Thinking 首页">
+          <span class="brand-glyph" aria-hidden="true">A</span>
+          <span>Agent Thinking</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="#">博客</a>
+          <a id="repoLink" href="https://github.com/mactawishHui/agent-thinking" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container site-main" id="app">
+      <section class="home-view" id="homeView" aria-labelledby="articlesTitle">
+        <div class="page-heading">
+          <h1 id="articlesTitle">首页</h1>
+          <p id="siteDescription">关于 AI、Agent、工程化工作流和个人创造力的长期记录。</p>
+        </div>
+
+        <hr>
+
+        <div class="feed-tools">
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Agent / Voice Coding / 工程化">
+          </label>
+          <p class="source-status" id="sourceStatus">正在读取 GitHub 文档目录...</p>
+        </div>
+
+        <div class="post-list" id="articleList" aria-live="polite"></div>
+      </section>
+
+      <article class="reader-shell" id="reader" aria-live="polite" hidden></article>
+    </main>
+
+    <footer class="container site-footer">
+      <span>Built from</span>
+      <a id="repoFooterLink" href="https://github.com/mactawishHui/agent-thinking" target="_blank" rel="noreferrer">mactawishHui/agent-thinking</a>
+    </footer>
+
+    <script src="blog-config.js"></script>
+    <script src="blog-data.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

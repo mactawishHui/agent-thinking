@@ -1,0 +1,11 @@
+{
+  "name": "agent-thinking-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-blog-data.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "serve": "node scripts/serve-static.mjs"
+  }
+}

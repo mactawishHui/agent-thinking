@@ -3,4 +3,5 @@
 # Raw private exports used as writing material, not public article assets.
 chatgpt_conversation_*_full.md
 chatgpt_conversation_*_full.json
-
+articles/_private/
+articles/_notes/
