@@ -7,5 +7,5 @@ window.BLOG_CONFIG = {
   articlesDirectory: 'articles',
   includePattern: '\\.md$',
   excludePattern: '^(README|chatgpt_conversation_)',
-  loadCommitDates: true
+  loadCommitDates: false
 };

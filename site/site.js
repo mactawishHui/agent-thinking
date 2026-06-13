@@ -17,27 +17,48 @@ async function boot() {
   hydrateShell();
   renderLoadingState();
 
-  try {
-    blogData = await fetchGitHubArticles(blogConfig);
-    sourceStatus.textContent = `已从 GitHub 读取 ${blogData.articles.length} 篇文章`;
-  } catch (error) {
-    if (!blogData || !Array.isArray(blogData.articles)) {
-      renderFatalState(error);
+  const cachedData = hasUsableBlogData(blogData) ? blogData : null;
+  searchInput.addEventListener('input', () => {
+    if (!hasUsableBlogData(blogData)) {
       return;
     }
-    sourceStatus.textContent = `GitHub 读取失败，正在使用本地缓存 ${blogData.articles.length} 篇文章`;
-  }
 
-  activeArticles = blogData.articles;
-  renderArticleCards(activeArticles);
-  renderRoute();
-
-  searchInput.addEventListener('input', () => {
     activeArticles = filterArticles(searchInput.value);
     renderArticleCards(activeArticles);
   });
+  window.addEventListener('hashchange', () => {
+    if (hasUsableBlogData(blogData)) {
+      renderRoute();
+    }
+  });
 
-  window.addEventListener('hashchange', renderRoute);
+  if (cachedData) {
+    sourceStatus.textContent = `已加载构建缓存 ${cachedData.articles.length} 篇文章，正在检查 GitHub 更新...`;
+    publishBlogData(cachedData);
+  }
+
+  try {
+    const githubData = await fetchGitHubArticles(blogConfig);
+    sourceStatus.textContent = `已从 GitHub 读取 ${githubData.articles.length} 篇文章`;
+    publishBlogData(githubData);
+  } catch (error) {
+    if (!cachedData) {
+      renderFatalState(error);
+      return;
+    }
+    sourceStatus.textContent = `已加载构建缓存 ${blogData.articles.length} 篇文章；GitHub 同步暂不可用`;
+  }
+}
+
+function publishBlogData(nextData) {
+  blogData = nextData;
+  activeArticles = filterArticles(searchInput.value);
+  renderArticleCards(activeArticles);
+  renderRoute();
+}
+
+function hasUsableBlogData(data) {
+  return data && Array.isArray(data.articles) && data.articles.length > 0;
 }
 
 function hydrateShell() {
@@ -151,7 +172,10 @@ async function fetchLatestCommitDate(path, directoryConfig) {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url, { headers: { Accept: 'application/vnd.github+json' } });
+  const response = await fetch(withCacheBust(url), {
+    cache: 'no-store',
+    headers: { Accept: 'application/vnd.github+json' }
+  });
 
   if (!response.ok) {
     throw new Error(`GitHub request failed: ${response.status}`);
@@ -161,7 +185,7 @@ async function fetchJson(url) {
 }
 
 async function fetchText(url) {
-  const response = await fetch(url);
+  const response = await fetch(withCacheBust(url), { cache: 'no-store' });
 
   if (!response.ok) {
     throw new Error(`Markdown request failed: ${response.status}`);
@@ -508,6 +532,12 @@ function encodePath(path) {
     .filter(Boolean)
     .map((part) => encodeURIComponent(part))
     .join('/');
+}
+
+function withCacheBust(url) {
+  const parsed = new URL(url);
+  parsed.searchParams.set('_', String(Date.now()));
+  return parsed.toString();
 }
 
 function renderFatalState(error) {

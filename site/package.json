@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build-blog-data.mjs",
     "test": "node --test scripts/*.test.mjs",
-    "serve": "node scripts/serve-static.mjs"
+    "serve": "HOST=127.0.0.1 node scripts/serve-static.mjs",
+    "start": "node scripts/serve-static.mjs"
   }
 }

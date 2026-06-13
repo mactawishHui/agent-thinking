@@ -4,10 +4,10 @@ import assert from 'node:assert/strict';
 
 const root = new URL('../../', import.meta.url);
 
-test('repository root keeps only site and articles as visible project entries', () => {
+test('repository root keeps README plus site and articles as visible project entries', () => {
   const visibleEntries = readdirSync(root)
     .filter((entry) => !entry.startsWith('.'))
     .sort();
 
-  assert.deepEqual(visibleEntries, ['articles', 'site']);
+  assert.deepEqual(visibleEntries, ['README.md', 'articles', 'site']);
 });
