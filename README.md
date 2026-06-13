@@ -48,16 +48,28 @@ npm run serve
 
 然后打开 `http://127.0.0.1:4173/`。
 
+本地 Docker 预览：
+
+```bash
+docker build -t agent-thinking-blog .
+docker run --rm -p 4173:4173 -e PORT=4173 agent-thinking-blog
+```
+
+然后打开 `http://127.0.0.1:4173/`。
+
 ## Deployment
+
+这个仓库根目录包含 `Dockerfile`，Zeabur 会自动识别并使用 Docker 部署。
 
 部署到 Zeabur：
 
 1. 登录 Zeabur，创建 Project。
 2. Add Service → GitHub，选择 `mactawishHui/agent-thinking` 仓库。
-3. 在服务 Settings 里把 Root Directory 设为 `site`。
-4. Build Command 设为 `npm run build`。
-5. Start Command 设为 `npm run start`。
-6. 后续 push 到 GitHub 后，Zeabur 会自动重新部署。
+3. 保持 Root Directory 为仓库根目录，不要改成 `site`。
+4. Zeabur 检测到 `Dockerfile` 后会按 Dockerfile 构建并启动服务。
+5. 后续 push 到 GitHub 后，Zeabur 会自动重新部署。
+
+Dockerfile 会在镜像构建阶段执行 `npm run build`，自动扫描 `articles/` 并生成 `site/blog-data.js`。运行阶段会执行 `npm run start`，服务会读取 Zeabur 注入的 `PORT`。
 
 ## Articles
 
