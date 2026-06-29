@@ -15,6 +15,7 @@
 - [Agent 很强，但人不能偷懒](./articles/agent-human-not-lazy-article.md)
 - [AI 提高下限，但人决定上限](./articles/ai-raises-floor-human-ceiling-article.md)
 - [Voice Coding 是先进生产力工具](./articles/voice-coding-article.md)
+- [Loop Engineering 详细总结：让 Agent 自己转起来的工程方法](./articles/loop-engineering-summary.md)
 
 ## Assets
 
