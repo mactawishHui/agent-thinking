@@ -1,6 +1,6 @@
 # Loop Engineering 详细总结：让 Agent 自己转起来的工程方法
 
-> 来源：`/Users/mactawish/Desktop/Loop-Engineering-IEEE.pdf`
+> 来源：[Loop-Engineering-IEEE.pdf](assets/loop-engineering-summary/Loop-Engineering-IEEE.pdf)
 > 这篇文档是对 PDF 的结构化总结，重点整理 Loop Engineering 的概念、产生背景、工程结构、风险和落地方法。
 
 ![Loop Engineering 的核心，是让人站在循环外设计一个会持续调度、验证和记忆的 Agent 系统](assets/loop-engineering-summary/01-cover-loop-engineering.png)
